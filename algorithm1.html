@@ -1,0 +1,41 @@
+algorithm SENTENCE
+
+VAR
+c:char ;
+sent : string ;
+numC , numW , numV , numE: INTEGER ;
+i,j,k:INTEGER ;
+
+BEGIN
+do 
+read "write a character"
+print (c)
+while
+c<>"."
+/* spaces number */
+numE=0
+for i=0 , i<len(sent)-1
+if sent[i]=" " 
+numE=numE+1
+end if
+end for
+
+/*nmbr of words is nmbr of spaces +1 */
+numW=0
+for j=0 , j<length(sent)
+numW=NumE+1 
+end for
+
+/* caracters number is total length-espace caracters */
+numC=length(sent)-numE
+
+numV=0
+for k=0;k<length(sent)-1
+if sent[k]=e,y,u,i,o,a
+numV=numV+1
+
+
+write(numC)
+write(numW)
+write(numV)
+END
